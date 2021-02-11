@@ -9,3 +9,8 @@ th {
 td {
   border: 2px solid black;
 }
+button {
+  display: inline-block;
+  /* margin: 0 auto; */
+  cursor: pointer;
+}
