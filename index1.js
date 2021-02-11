@@ -16,12 +16,12 @@ page1.addEventListener("click", (event) => {
       tbody.innerHTML = "";
       array.forEach((item, index) => {
         tbody.innerHTML += `<tr>
-       <td id = "${array[index].id}">
+       <td id = "${array.id[index]}">
        <img src="${item.avatar}" alt="avatar">
        </td>
-       <td id = "${array[index].id}">${item.email}</td>
-       <td id = "${array[index].id}">${item.first_name}</td>
-       <td id = "${array[index].id}">${item.last_name}</td>
+       <td id = "${array.id[index]}">${item.email}</td>
+       <td id = "${array.id[index]}">${item.first_name}</td>
+       <td id = "${array.id[index]}">${item.last_name}</td>
   
        </tr>`;
       });
@@ -46,12 +46,12 @@ page2.addEventListener("click", (event) => {
       tbody.innerHTML = "";
       array.forEach((item, index) => {
         tbody.innerHTML += `<tr>
-     <td id = "${array[index].id}">
+     <td id = "${array.id[index]}">
      <img src="${item.avatar}" alt="avatar">
      </td>
-     <td id = "${array[index].id}">${item.email}</td>
-     <td id = "${array[index].id}">${item.first_name}</td>
-     <td id = "${array[index].id}">${item.last_name}</td>
+     <td id = "${array.id[index]}">${item.email}</td>
+     <td id = "${array.id[index]}">${item.first_name}</td>
+     <td id = "${array.id[index]}">${item.last_name}</td>
 
      </tr>`;
       });
